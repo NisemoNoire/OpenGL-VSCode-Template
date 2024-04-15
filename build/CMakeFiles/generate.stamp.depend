@@ -1,0 +1,20 @@
+# CMake generation dependency list for this directory.
+D:/CODE/OpenGLxvsc/CMakeLists.txt
+D:/CODE/OpenGLxvsc/build/CMakeFiles/3.26.3/CMakeCXXCompiler.cmake
+D:/CODE/OpenGLxvsc/build/CMakeFiles/3.26.3/CMakeRCCompiler.cmake
+D:/CODE/OpenGLxvsc/build/CMakeFiles/3.26.3/CMakeSystem.cmake
+F:/CODE/OpenGL/cmake-3.26.3/share/cmake-3.26/Modules/CMakeCXXInformation.cmake
+F:/CODE/OpenGL/cmake-3.26.3/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake
+F:/CODE/OpenGL/cmake-3.26.3/share/cmake-3.26/Modules/CMakeGenericSystem.cmake
+F:/CODE/OpenGL/cmake-3.26.3/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake
+F:/CODE/OpenGL/cmake-3.26.3/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake
+F:/CODE/OpenGL/cmake-3.26.3/share/cmake-3.26/Modules/CMakeRCInformation.cmake
+F:/CODE/OpenGL/cmake-3.26.3/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake
+F:/CODE/OpenGL/cmake-3.26.3/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake
+F:/CODE/OpenGL/cmake-3.26.3/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+F:/CODE/OpenGL/cmake-3.26.3/share/cmake-3.26/Modules/Compiler/MSVC-CXX.cmake
+F:/CODE/OpenGL/cmake-3.26.3/share/cmake-3.26/Modules/Compiler/MSVC.cmake
+F:/CODE/OpenGL/cmake-3.26.3/share/cmake-3.26/Modules/Platform/Windows-MSVC-CXX.cmake
+F:/CODE/OpenGL/cmake-3.26.3/share/cmake-3.26/Modules/Platform/Windows-MSVC.cmake
+F:/CODE/OpenGL/cmake-3.26.3/share/cmake-3.26/Modules/Platform/Windows.cmake
+F:/CODE/OpenGL/cmake-3.26.3/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake

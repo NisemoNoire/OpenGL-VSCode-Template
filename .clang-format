@@ -1,0 +1,43 @@
+Language: Cpp
+BasedOnStyle:  WebKit
+
+# 尾随的注释对齐
+AlignTrailingComments: true
+
+# 允许短的函数放在同一行
+AllowShortFunctionsOnASingleLine: All
+
+# 允许短的if语句保持在同一行
+AllowShortIfStatementsOnASingleLine: true
+
+# 允许短的循环while保持在同一行
+AllowShortLoopsOnASingleLine: true
+
+# 允许短的枚举放在同一行
+AllowShortEnumsOnASingleLine: true
+
+# 允许短的语法块放在同一行
+AllowShortBlocksOnASingleLine: Always
+
+# 大括号换行
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: true
+  SplitEmptyFunction: false
+
+# 不允许排序#include
+# SortIncludes: Never
+
+# 连续声明时，对齐所有声明的变量名
+#AlignConsecutiveDeclarations:
+#  Enabled: true
+#  AcrossEmptyLines: false
+#  AcrossComments: true
+
+# 连续赋值时，对齐所有等号
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCompound: true
+  PadOperators: true

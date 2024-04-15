@@ -1,0 +1,10 @@
+^D:\CODE\OPENGLXVSC\SRC\03_LIGHTING\CMAKELISTS.TXT
+setlocal
+F:\CODE\OpenGL\cmake-3.26.3\bin\cmake.exe -SD:/CODE/OpenGLxvsc -BD:/CODE/OpenGLxvsc/build --check-stamp-file D:/CODE/OpenGLxvsc/build/src/03_lighting/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
