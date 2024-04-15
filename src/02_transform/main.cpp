@@ -7,6 +7,7 @@
 #include <iostream>
 #define STB_IMAGE_IMPLEMENTATION
 #include "camera.hpp"
+#include <filesystem>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
@@ -65,8 +66,9 @@ int main()
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED); /* 隐藏鼠标指针 */
 
     /*-------------------------------↓ Custom ↓---------------------------------*/
-    Shader firstShader(R"(D:\CODE\OpenGLxvsc\src\02_transform\shader.vs)", "D:\\CODE\\OpenGLxvsc\\src\\02_transform\\shader.fs");
-
+    std::filesystem::path vs("../src/02_transform/shader.vs");
+    std::filesystem::path fs("../src/02_transform/shader.fs");
+    Shader firstShader(std::filesystem::absolute(vs).string().c_str(), std::filesystem::absolute(fs).string().c_str());
     /* 顶点数据 */
     float vertices[] = {
         -0.5f, -0.5f, -0.5f, 0.0f, 0.0f,
@@ -154,8 +156,9 @@ int main()
 
     /* 加载图像并绑定 */
     int width, height, nrChannels;
+    vs = "../src/02_transform/container.jpg";
     stbi_set_flip_vertically_on_load(true);
-    unsigned char* data = stbi_load("D:\\CODE\\OpenGLxvsc\\src\\02_transform\\container.jpg", &width, &height, &nrChannels, 0);
+    unsigned char* data = stbi_load(std::filesystem::absolute(vs).string().c_str(), &width, &height, &nrChannels, 0);
     if (data) {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);
@@ -176,8 +179,9 @@ int main()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
+    vs = "../src/02_transform/awesomeface.png";
     /* 加载图像并绑定 */
-    data = stbi_load("D:\\CODE\\OpenGLxvsc\\src\\02_transform\\awesomeface.png", &width, &height, &nrChannels, 0);
+    data = stbi_load(std::filesystem::absolute(vs).string().c_str(), &width, &height, &nrChannels, 0);
     if (data) {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);
